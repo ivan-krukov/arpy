@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import subprocess as sub
 import re
 from http import server

@@ -5,11 +5,11 @@ A simplistic `ARP-scan` front-end. Used to see which addresses are used on the l
 ##Usage
 
 ```
-chmod +x arpy
-sudo ./arpy
+brew install arp-scan
+sudo python ./arpy
 ```
 
-Now go to `http://localhost:8000`
+Now go to `http://localhost:8000` or open `./index.html`
 
 ##Dependencies
 
