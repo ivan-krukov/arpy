@@ -12,14 +12,13 @@ if [ $uname = "Darwin" ]; then
 		exit 1
 	fi
 elif [ $uname = "Linux" ]; then
-	echo "what"
 	for ins in "apt-get" "yum"; do
-		which -s $ins
+		which $ins > /dev/null
 		rc=$?
 		if [ $rc = 0 ]; then
 			installer=$ins
 		else
-			echi "$ins not found"
+			echo "$ins not found"
 		fi
 	done
 fi
